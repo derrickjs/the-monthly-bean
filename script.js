@@ -1,10 +1,16 @@
 //header content
 
+document.body.style.margin = "0";
+document.body.style.fontFamily = "sans-serif";
+
 var logo = document.createElement("img");
 var header = document.createElement("header");
 var site_title = document.createElement("h1");
-var button1 = document.createElement("button");
-var button2 = document.createElement("Button");
+var button1 = document.createElement("a");
+var button2 = document.createElement("a");
+
+button1.setAttribute("href", "#") // this sets the buttons links to where they need to go.
+button2.setAttribute("href", "#")
 
 
 logo.src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1665416689/monthly_bean_gauvls.png";
@@ -12,7 +18,7 @@ logo.src = "https://res.cloudinary.com/derrickstahlman/image/upload/v1665416689/
 
 var buttonText1 = document.createTextNode("Home");
 var buttonText2 = document.createTextNode("Subscribe");
-var title_text = document.createTextNode("The Monthly Bean");
+var title_text = document.createTextNode("Welcome Coffee Lovers");
 
 
 site_title.appendChild(title_text);
@@ -31,12 +37,18 @@ header.style.minHeight = "15vh";
 header.style.fontSize = "1.5em";
 header.style.borderBottom = "2px solid black";
 header.style.textAlign = "center";
+header.style.backgroundColor = "#5c4a1c";
+header.style.color = "#f5ecd5";
 
 button1.style.margin = "1em";
 button2.style.margin = "1em";
+button1.style.color = "#f5ecd5"
+button2.style.color = "#f5ecd5"
+
 
 logo.style.display = "block";
 logo.style.height = "15vh";
+logo.style.margin = "0 auto";
 
 
 
@@ -111,13 +123,19 @@ main.style.fontSize = "2em";
 main.style.margin = "0 auto";
 main_header.style.backgroundColor = "black";
 main_header.style.color = "white";
+main_header.style.width = "20%";
+main_header.style.textAlign = "center";
 main_header2.style.backgroundColor = "black";
 main_header2.style.color = "white";
+main_header2.style.width = "20%";
+main_header2.style.textAlign = "center";
 main_header3.style.backgroundColor = "black";
 main_header3.style.color = "white";
-main_header.style.textAlign = "center";
-main_header2.style.textAlign = "center";
+main_header3.style.width = "20%";
 main_header3.style.textAlign = "center";
+main_header.style.margin = "0 auto";
+main_header2.style.margin = "0 auto";
+main_header3.style.margin = "0 auto";
 
 
 
@@ -140,16 +158,15 @@ footer.appendChild(site_copy);
 footer.style.width = "100vw";
 footer.style.height = "5vh";
 footer.style.borderTop = "2px solid black";
+footer.style.backgroundColor = "#5c4a1c";
+footer.style.color = "#f5ecd5";
+footer.style.position = "fixed";
+footer.style.bottom = "0";
 site_copy.style.textAlign = "center";
 
 
 
 
-document.body.appendChild(footer)
-
-
-
-
-
+document.body.appendChild(footer);
 
 
